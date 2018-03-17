@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <checkout_onepage_index>
+        <reference name='checkout.onepage.billing'>
+            <block type='checkout/onepage_billing' name='form.additional.info' template='address/checkout/onepage/billing_field.phtml'></block>
+        </reference>
+    </checkout_onepage_index>
+    <checkout_onepage_index>
+        <reference name='checkout.onepage.billing'>
+            <block type='checkout/onepage_billing' name='form.additional.info' template='address/checkout/onepage/billing_field.phtml'></block>
+        </reference>
+        <reference name='checkout.onepage.shipping'>
+            <action method='setTemplate'><template>address/checkout/onepage/shipping.phtml</template></action>
+        </reference>
+    </checkout_onepage_index>
+    <customer_account_create>
+        <reference name='customer_form_register'>
+            <block type='customer/form_register' name='form.additional.info' template='address/customer/form/register_field.phtml'></block>
+        </reference>
+    </customer_account_create>
+    <customer_address_form>
+       <reference name='customer_address_edit'>
+           <action method='setTemplate'><template>address/customer/address/edit.phtml</template></action>
+       </reference>
+   </customer_address_form>
+</layout> 

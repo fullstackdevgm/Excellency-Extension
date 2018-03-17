@@ -1,0 +1,16 @@
+<div class="field">
+    <label for="billing:house_number" class="required"><em>*</em>
+        <?php echo $this->__('House Number') ?>
+    </label>
+    <div class="input-box">
+        <input type="text" name="billing[house_number]" id="billing:house_number" value="<?php echo $this->escapeHtml($this->getAddress()->getHouseNumber()) ?>" title="<?php echo $this->__('House Number') ?>" class="input-text required-entry" />
+    </div>
+</div>
+<div class="field">
+    <label for="billing:po_box">
+        <?php echo $this->__('PO Box') ?>
+    </label>
+    <div class="input-box">
+        <input type="text" name="billing[po_box]" id="billing:po_box" value="<?php echo $this->escapeHtml($this->getAddress()->getPOBox()) ?>" title="<?php echo $this->__('PO Box') ?>" class="input-text" />
+    </div>
+</div>

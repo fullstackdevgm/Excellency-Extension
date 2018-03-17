@@ -1,0 +1,16 @@
+<li class="fields">
+    <div class="field">
+        <label for="house_number" class="required"><em>*</em><?php echo $this->__('House Number') ?></label>
+        <div class="input-box">
+            <input type="text" name="house_number" value="<?php echo $this->htmlEscape($this->getFormData()->getHouseNumber()) ?>" title="<?php echo $this->__('House Number') ?>" id="house_number" class="input-text required-entry" />
+        </div>
+    </div>
+</li>
+<li class="fields">
+    <div class="field">
+        <label for="po_box"><?php echo $this->__('PO Box') ?></label>
+        <div class="input-box">
+            <input type="text" name="po_box" value="<?php echo $this->htmlEscape($this->getFormData()->getPOBox()) ?>" title="<?php echo $this->__('PO Box') ?>" id="po_box" class="input-text" />
+        </div>
+    </div>
+</li>
